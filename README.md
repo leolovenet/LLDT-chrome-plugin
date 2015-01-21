@@ -6,7 +6,8 @@ LLDT-chrome-plugin
 
 预览
 -----
-
+![预览0](preview0.png?raw=true "预览0")
+![预览1](preview1.png?raw=true "预览1")
 
 
 功能
