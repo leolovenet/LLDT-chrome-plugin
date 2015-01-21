@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+	<title>LL Developter Tools</title>
+   	<script type="text/javascript" src="assets/libs/jquery.js"></script>
+    <script type="text/javascript" src="assets/libs/keymaster.js"></script>
+	<script type="text/javascript" src="assets/scripts/popupMenu.js"></script>
+	<style>
+	body {
+		background-color:#fff;
+		font-family:Arial,"Hiragino Sans GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体",sans-serif;
+		font-size:14px;
+	}
+	#menu {
+		margin: 2px auto;
+		width: 190px;
+	}
+	#menu .item {
+		padding: 4px 25px;
+		-webkit-padding-start: 6px;
+		margin: 0 2px;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	#menu .item:hover,#menu .active{
+		padding: 3px 24px;
+		-webkit-padding-start: 5px;
+		border: solid 1px #bcd;
+		border-radius: 2px;
+		background: #ECF0F1;
+	}
+    #menu img{
+        width:16px;
+        height:16px;
+        vertical-align: middle;
+    }
+    #menu .icon {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+    }
+    #menu .checked .icon {
+        background: url(assets/images/checked.png) !important;
+    }
+	#menu .message{
+		width: 100%;
+		margin: 5px  auto 0;
+        padding: 4px 0;
+		text-align: center;
+        background-color: #ECF0F1;
+        color: #C6CCD0;
+	}
+    .hotkey {
+        text-decoration: underline;
+        color: red;
+    }
+	</style>
+</head>
+<body>
+  <div id="menu">
+
+      <div id="options" class="item">
+          <img src="assets/images/i-options.png"/>
+          <span class="hotkey">O</span>ptions
+      </div>
+      <div id="action-debug" class="item action" data-status="1">
+          <img  src="assets/images/i-debug.png" />
+          <span class="status">Enable</span> xdebug <span class="hotkey">D</span>ebug
+      </div>
+      <div id="action-profile" class="item action" data-status="2">
+          <img src="assets/images/i-profile.png" />
+          <span class="status">Enable</span> xdebug <span class="hotkey">P</span>rofile
+      </div>
+      <div id="action-trace" class="item action" data-status="3">
+          <img src="assets/images/i-trace.png" />
+          <span class="status">Enable</span> xdebug <span class="hotkey">T</span>race
+      </div>
+
+      <div id="action-xhprof" class="item action" data-status="4">
+          <img src="assets/images/i-xhprof.png" />
+          <span class="status">Enable</span> <span class="hotkey">X</span>hprof
+      </div>
+
+      <div class="message">
+          "<span id="command">Ctrl+Shift+X</span>"<span data-i18n-content="popupWin_message1"> open this windonw</span>
+          <span data-i18n-content="popupWin_message2">Red letters for the shortcut</span>
+      </div>
+
+  </div>
+</body>
+</html>

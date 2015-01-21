@@ -1,0 +1,111 @@
+#lldt_popupWin {
+    position: fixed;
+    bottom: 0;
+    background: #F1EDED;
+    padding: 5px;
+    border: none;
+    border-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    cursor: default;
+    z-index: 9999999999999;
+    outline: 0;
+    vertical-align: baseline;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#lldt_popupWin #lldt_menu {
+    min-width: 290px;
+    width:100%;
+    height:16px;
+    line-height: 16px;
+    margin:0 0 2px 0;
+    padding:0;
+}
+#lldt_popupWin .lldt_hieght16,#lldt_popupWin .lldt_hieght16:after{
+    width:16px;
+    height:16px;
+    line-height:16px;
+    font-size:  14px;
+    display: inline;
+    padding:0;
+    margin: 0;
+    content:"";
+}
+#lldt_popupWin #lldt_menu #lldt_menu_move{
+    cursor: pointer;
+    margin-left:5%;
+    padding-right:80%;
+    background:url('chrome-extension://__MSG_@@extension_id__/assets/images/move.png') no-repeat;
+}
+#lldt_popupWin #lldt_menu #lldt_menu_move:hover{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/assets/images/move2.png');
+}
+#lldt_popupWin #lldt_menu #lldt_menu_close{
+    cursor: pointer;
+    padding-right:7%;
+    margin-left:5%;
+    background:url('chrome-extension://__MSG_@@extension_id__/assets/images/close.png') no-repeat;
+}
+#lldt_popupWin #lldt_menu #lldt_menu_close:hover{
+    background-image:url('chrome-extension://__MSG_@@extension_id__/assets/images/close2.png');
+}
+
+#lldt_popupWin #lldt_content {
+    max-width:  415px;
+    max-height: 200px;
+    overflow-y: scroll;
+    text-align: center;
+}
+.lldt_popupWin_right {
+    right: 1%;
+}
+.lldt_popupWin_left {
+    left: 1%;
+}
+#lldt_popupWin table{
+    text-align: left;
+    border-collapse:collapse;
+    font-size: 12px;
+    margin: 0;
+}
+#lldt_popupWin table td,#lldt_popupWin table td th {
+    padding: 1px 5px;
+    border: 1px solid #95A5A6;
+    font-size: 11px;
+    vertical-align: baseline;
+    line-height: 1.1;
+    -webkit-user-select: text;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    word-break: break-word;
+    width:auto;
+    line-height: 1;
+}
+#lldt_popupWin .IP{
+    color: #E74C3C;
+    font-weight: bold;
+}
+#lldt_popupWin .ServerName{
+    color: #3498DB;
+    font-weight: bold;
+}
+#lldt_popupWin .CacheOnOff{
+    color: #E67E22;
+    font-weight: bold;
+}
+#lldt_popupWin .TimeStamp{
+    color: #16A085;
+    font-weight: bold;
+}
+#lldt_popupWin .popup_k{
+    min-width: 100px;
+}
+
+/* hide if in print view */
+@media print {
+      #lldt_popupWin {display:none;}
+}

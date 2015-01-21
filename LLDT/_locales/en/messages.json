@@ -1,0 +1,162 @@
+{
+	"manifest_appName":{
+		"message": "LL Developer Tools"
+	},
+	"manifest_appDescription":{
+		"message": "Add some useful function for Web Developer"
+	},
+	"manifest_pageAction_defaultTitle":{
+		"message": "LL Developter Tools"
+	},
+	"manifest_pageAction_executeCommands_Des":{
+		"message": "Open the options settings pop-up interface"
+	},
+
+	"options_headerTitle": {
+		"message": "LL Developter Tools Options"
+	},
+	"options_allScope":{
+		"message": "In all domain enabled LL Developer Tools"
+	},
+	"options_otherScope":{
+		"message": "Only in the specified domain, enable LL Developer Tools"
+	},
+	"options_popupWinGlobeSwitch": {
+		"message": "Global disable show the HTTP response headers information Popup in the bottom of the page"
+	},
+	"options_cacheGlobeSwitch":{
+		"message": "Global disable browser cache"
+	},
+	"options_ideSelect_other":{
+		"message": "Custom"
+	},
+	"options_saveXdebugIDEkeyError":{
+		"message": "Save your custom Xdebug Key error, please check your input"
+	},
+	"options_saveXdebugIDEkeySuccess":{
+		"message": "Save your custom Xdebug Key success"
+	},
+	"options_tabRules": {
+		"message": "Special Rules"
+	},
+	"options_tabXdebug":{
+		"message": "Xdebug & Xhprof Rules"
+	},
+	"options_tabPopupRules":{
+		"message": "HTTP Response Headers Popup Rules"
+	},
+	"options_PopupRules_des":{
+		"message": "The default display all HTTP response header, You can specify some one to hide, one per line. You can NOT use regular."
+	},
+	"options_xdebugModel_1":{
+		"message": "For all URLs Webpage Request (including Webpage internal JS, CSS, AJAX, post and so on request) to open Xdebug or Xhprof"
+	},
+	"options_xdebugModel_2":{
+		"message": "Only for the URL in the browser address bar to open Xdebug or Xhprof"
+	},
+	"options_xdebugModel_3":{
+		"message": "Only for the specified URLs request to open Xdebug or Xhprof"
+	},
+	"popupWin_message1":{
+		"message":" Open this window"
+	},
+	"popupWin_message2":{
+		"message":"Red letters is shortcut keys"
+	},
+	"options_url":{
+		"message": "URL (can use a regular, or beginning with \"http://\" URL)"
+	},
+	"options_enablePopupWin":{
+		"message": "HTTP ResHeaders Popup"
+	},
+	"options_enableCache":{
+		"message": "Browser Cache"
+	},
+	"options_ruleAction":{
+		"message": "Operation"
+	},
+	"options_selectEnableYes":{
+		"message": "Enable"
+	},
+	"options_selectEnableNO":{
+		"message": "Disable"
+	},
+	"options_deleteRule": {
+		"message": "Delete"
+	},
+	"options_newRule": {
+		"message": "New Rule"
+	},
+	"options_clickToEdit": {
+		"message": "Click to edit"
+	},
+	"options_resetOptions": {
+		"message": "Reset all rules"
+	},
+	"options_close": {
+		"message": "Close"
+	},
+	"options_save": {
+		"message": "Save"
+	},
+	"options_rules_descriptions":{
+		"message": "One URL per line, you can use a regular expression, but except ^$$ character."
+	},
+
+	"message_deleteSelectedRule": {
+		"message": "Delete the selected rule? \n\nThe selected rule: ($1)"
+	},
+	"message_saveChangedValues": {
+		"message": "There is a change of configuration, have not been saved, do you want to save changes?"
+	},
+	"message_exitChangedValues": {
+		"message": "There is a change of configuration, have not been saved, whether to leave this page?"
+	},
+	"message_resetOptions":{
+		"message": "This will permanently delete all your configuration options, do you want to continue?"
+	},
+	"message_resetOptionsConfirm":{
+		"message": "Are you really sure you want to permanently delete all configuration, it will delete all of the configuration?"
+	},
+	"message_resetOptionsSuccess":{
+		"message": "The configuration option to clear success."
+	},
+	"message_selectBackupFile": {
+		"message": "Select the path to backup file."
+	},
+	"message_successRestoreOptionsBackup": {
+		"message": "Set the import was successful."
+	},
+	"message_ruleDeleted": {
+		"message": "The rules have been deleted."
+	},
+	"message_optionsSaved": {
+		"message": "Settings saved."
+	},
+
+
+	"HTTP_Hearders_IP":{
+		"message": "Server IP"
+	},
+	"HTTP_Hearders_Server_Name":{
+		"message": "Server Name"
+	},
+	"HTTP_Hearders_Cache_isDisable":{
+		"message": "Browser Cache"
+	},
+	"HTTP_Hearders_Cache_isDisable_true":{
+		"message": "Disabled"
+	},
+	"HTTP_Hearders_Cache_isDisable_false":{
+		"message": "Enabled"
+	},
+	"HTTP_Hearders_TimeStamp":{
+		"message": "HTML Time/MS"
+	},
+	"HTTP_Hearders_GetError":{
+		"message": "Gets the HTTP response header encountered an error, please refresh page."
+	},
+	"HTTP_URL_GetError":{
+		"message": "Gets the current request URL error, please refresh page."
+	}
+}

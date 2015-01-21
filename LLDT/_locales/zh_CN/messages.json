@@ -1,0 +1,162 @@
+{
+	"manifest_appName":{
+		"message": "LL Developer Tools"
+	},
+	"manifest_appDescription":{
+		"message": "WEB 开发者需要的一些辅助功能"
+	},
+	"manifest_pageAction_defaultTitle":{
+		"message": "LL Developter Tools"
+	},
+	"manifest_pageAction_executeCommands_Des":{
+		"message": "打开选项设置弹窗界面"
+	},
+
+	"options_headerTitle": {
+		"message": "LL Developter Tools 选项"
+	},
+	"options_allScope":{
+		"message": "在所有域名启用 LL Developer Tools"
+	},
+	"options_otherScope":{
+		"message": "只在指定域名下，启用 LL Developer Tools"
+	},
+	"options_popupWinGlobeSwitch": {
+		"message": "全局禁止在页面下方显示HTTP协议信息的弹窗"
+	},
+	"options_cacheGlobeSwitch":{
+		"message": "全局禁用浏览器缓存"
+	},
+	"options_ideSelect_other":{
+		"message": "自定义"
+	},
+	"options_saveXdebugIDEkeyError":{
+		"message": "保存自定义 Xdebug Key 错误，请检查你的输入。"
+	},
+	"options_saveXdebugIDEkeySuccess":{
+		"message": "保存自定义 Xdebug Key 成功"
+	},
+	"options_tabRules": {
+		"message": "特殊规则"
+	},
+	"options_tabXdebug":{
+		"message": "Xdebug & Xhprof 规则"
+	},
+	"options_tabPopupRules":{
+		"message": "HTTP 回应头信息弹窗规则"
+	},
+	"options_PopupRules_des":{
+		"message": "HTTP 信息弹窗，默认显示所有的 HTTP 回应头，可以在下面指定需要隐藏的 HTTP 头，每行一个。不可以用正则。"
+	},
+	"options_xdebugModel_1":{
+		"message": "针对网页内的所有 URLs (包括网页内部的js,css,ajax,post等请求)开启 Xdebug 或者 Xhprof"
+	},
+	"options_xdebugModel_2":{
+		"message": "只针对浏览器地址栏中的 URL 开启 Xdebug 或者 Xhprof"
+	},
+	"options_xdebugModel_3":{
+		"message": "只针对指定的 URLs 请求开启 Xdebug 或者 Xhprof"
+	},
+	"popupWin_message1":{
+		"message":" 打开此窗口"
+	},
+	"popupWin_message2":{
+		"message":"红色字母为功能快捷键"
+	},
+	"options_url":{
+		"message": "URL (可用正则,或者以 http:// 开头的详细 URL)"
+	},
+	"options_enablePopupWin":{
+		"message": "HTTP 回应头信息弹窗"
+	},
+	"options_enableCache":{
+		"message": "浏览器 Cache"
+	},
+	"options_ruleAction":{
+		"message": "操作"
+	},
+	"options_selectEnableYes":{
+		"message": "启用"
+	},
+	"options_selectEnableNO":{
+		"message": "禁用"
+	},
+	"options_deleteRule": {
+		"message": "删除规则"
+	},
+	"options_newRule": {
+		"message": "新规则"
+	},
+	"options_clickToEdit": {
+		"message": "点击编辑"
+	},
+	"options_resetOptions": {
+		"message": "清空所有规则"
+	},
+	"options_close": {
+		"message": "关闭"
+	},
+	"options_save": {
+		"message": "保存"
+	},
+	"options_rules_descriptions":{
+		"message": "每行一个 URL，可以使用正则表达式，但是除了 ^$$ 字符。"
+	},
+
+	"message_deleteSelectedRule": {
+		"message": "确认删除选中的规则吗？\n\n选中的规则: ($1)"
+	},
+	"message_saveChangedValues": {
+		"message": "配置有变动，还没有保存，是否保存更改?"
+	},
+	"message_exitChangedValues": {
+		"message": "配置有变动，还没有保存，是否离开本页面?"
+	},
+	"message_resetOptions":{
+		"message": "这将永久删除所有你得配置选项, 是否继续?"
+	},
+	"message_resetOptionsConfirm":{
+		"message": "你真的确定要永久删除所有的配置吗，这将彻底删除所有配置？"
+	},
+	"message_resetOptionsSuccess":{
+		"message": "配置选项清除成功。"
+	},
+	"message_selectBackupFile": {
+		"message": "选择备份文件的路径。"
+	},
+	"message_successRestoreOptionsBackup": {
+		"message": "设置导入成功。"
+	},
+	"message_ruleDeleted": {
+		"message": "规则已删除。"
+	},
+	"message_optionsSaved": {
+		"message": "设置已保存。"
+	},
+
+
+	"HTTP_Hearders_IP":{
+		"message": "服务器IP"
+	},
+	"HTTP_Hearders_Server_Name":{
+		"message": "服务器名"
+	},
+	"HTTP_Hearders_Cache_isDisable":{
+		"message": "本页浏览器缓存"
+	},
+	"HTTP_Hearders_Cache_isDisable_true":{
+		"message": "已经禁用"
+	},
+	"HTTP_Hearders_Cache_isDisable_false":{
+		"message": "在启用中"
+	},
+	"HTTP_Hearders_TimeStamp":{
+		"message": "HTML时间/毫秒"
+	},
+	"HTTP_Hearders_GetError":{
+		"message": "获取 HTTP 回应头遇到错误，请刷新网页。"
+	},
+	"HTTP_URL_GetError":{
+		"message": "获取当前请求的网址错误，请刷新网页。"
+	}
+}

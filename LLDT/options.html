@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>LL Developter Tools Options</title>
+    <link rel="stylesheet" href="assets/styles/options.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/styles/infoTip.css" type="text/css"/>
+    <script src="assets/libs/jquery.js" type="text/javascript"></script>
+    <script src="assets/libs/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/infoTip.js" type="text/javascript"></script>
+    <script src="assets/scripts/options.js" type="text/javascript"></script>
+</head>
+<body data-i18n-values=".style.direction:global_direction;.style.textAlign:global_textAlign">
+    <table id="optionsTable">
+        <tbody>
+
+            <tr>
+                <td>
+                    <div id="header">
+                        <table>
+                            <tr>
+                                <td style="width:100%;">
+                                    <img src="assets/images/logo.png" />
+                                    <span class="title" data-i18n-content="options_headerTitle">LL Developter Tools Options</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <table id="profile">
+                        <tr>
+                            <td>
+                                <input name="ScopeMode" class="ScopeMode" type="radio" value="1" />
+                                <b data-i18n-content="options_allScope"></b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="ScopeMode" class="ScopeMode" type="radio" value="2" />
+                                <b data-i18n-content="options_otherScope"></b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table id="scopeRules">
+                                    <tr>
+                                        <td style="height:180px;">
+                                            <span data-i18n-content="options_rules_descriptions">write URLs her，each row of a url. you can use regex, except ^$</span>
+                                            <textarea name="scopeRules"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button class="button bold" id="saveScopeRules">
+                                                <img src="assets/images/save.png" alt="save"/>
+                                                <span data-i18n-content="options_save">Save</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="tabsRow" class="tabsRow">
+                <td>
+                    <div id="tabsContainer">
+                        <div id="tabRules" class="selected">
+                            <img src="assets/images/filter.png" style="width:16px;vertical-align:bottom;height:16px;" alt="filter"/>
+                            <span data-i18n-content="options_tabRules">Rules</span>
+                        </div>
+                        <div id="tabPopupRules" >
+                            <img src="assets/images/popup.png" style="width:16px;vertical-align:bottom;height:16px;" alt="PopupRules"/>
+                            <span data-i18n-content="options_tabPopupRules">HTTP Popup Windows Rules</span>
+                        </div>
+                        <div id="tabXdebug" >
+                            <img src="assets/images/options.png" style="width:16px;vertical-align:bottom;height:16px;" alt="options"/>
+                            <span data-i18n-content="options_tabXdebug">Xdebug & Xhporf Rules</span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr style="height:100%" class="tabsRow">
+                <td style="vertical-align:top">
+                    <div id="body"> <!--  include all tab -->
+                        <div id="tabRulesBody" class="tab">
+                            <table id="switchRules">
+                                <tr>
+                                    <td>
+                                        <input id="PopupWinSwitch" name="popupWinGlobeSwitch" class="globeCheckbox" type="checkbox" />
+                                        <b data-i18n-content="options_popupWinGlobeSwitch">Disable PopupWin Windows</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="CacheSwitch" name="cacheGlobeSwitch" class="globeCheckbox" type="checkbox" />
+                                        <b data-i18n-content="options_cacheGlobeSwitch">Enable Browser Cache</b>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div id="rulesArea">
+                                <table id="rulesTable" class="rulesTable">
+                                    <tr class="tableHeader">
+                                        <th style="width:70%"><span data-i18n-content="options_url">URL</span></th>
+                                        <th style="width:12%" class="PopupWinSwitch" ><span data-i18n-content="options_enablePopupWin">Disable PopupWin Windows</span></th>
+                                        <th style="width:12%" class="CacheSwitch"><span data-i18n-content="options_enableCache">Notes</span></th>
+                                        <th style="width:6%"><span data-i18n-content="options_ruleAction">Notes</span></th>
+                                    </tr>
+                                    <tr class="templateRow">
+                                        <td class="ltr">
+                                            <div title="Click to edit">
+                                                <span class="url ltr">-</span>
+                                                <input name="url" type="text"/>
+                                            </div>
+                                        </td>
+                                        <td class="PopupWinSwitch">
+                                            <div>
+                                                <select name="enablePopupWin" class="enablePopupWin">
+                                                    <option value="N" data-i18n-content="options_selectEnableNo">NO</option>
+                                                    <option value="Y" data-i18n-content="options_selectEnableYes">YES</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="CacheSwitch">
+                                            <div>
+                                                <select name="enableCache" class="enableCache">
+                                                    <option value="Y" data-i18n-content="options_selectEnableYes">YES</option>
+                                                    <option value="N" data-i18n-content="options_selectEnableNo">NO</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="delete rule" title="Delete Rule" data-i18n-values="title:options_deleteRule">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button class="button" id="btnNewRule">
+                                    <img src="assets/images/add.png" alt="add"/>
+                                    <span data-i18n-content="options_newRule">New Rule</span>
+                                </button>
+                                <div class="control">
+                                    <hr/>
+                                    <table>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button class="button bold" id="saveOptions">
+                                                    <img src="assets/images/save.png" alt="save"/>
+                                                    <span data-i18n-content="options_save">Save</span>
+                                                </button>
+                                            </td>
+                                            <td style="width:100%">
+                                                <button class="button" id="resetOptions">
+                                                    <img src="assets/images/trash.png" alt="trash"/>
+                                                    <span data-i18n-content="options_resetOptions">Reset Options</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabPopupRulesBody" class="tab">
+                            <div id="PopupRules">
+                                <b data-i18n-content="options_PopupRules_des">specific HTTP Headers which will NOT showwing in popup Windows, each row of a HTTP Header.</b>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <textarea name="PopupRules"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr/>
+                                <button class="button bold" id="savePopupRules">
+                                    <img src="assets/images/save.png" alt="save"/>
+                                    <span data-i18n-content="options_save">Save</span>
+                                </button>
+                                <button class="button" id="resetPopupRules">
+                                    <img src="assets/images/trash.png" alt="trash"/>
+                                    <span data-i18n-content="options_resetOptions">Reset Options</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="tabXdebugBody" class="tab">
+                            <div id="xdebugOptions">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div id="xdebugIDEkey">
+                                                <span class="bold">Xdebug IDE key</span>
+                                                <select id="ideSelect">
+                                                    <option value="PHPSTORM">PhpStorm</option>
+                                                    <option value="XDEBUG_ECLIPSE">Eclipse</option>
+                                                    <option value="netbeans-xdebug">Netbeans</option>
+                                                    <option value="macgdbp">MacGDBp</option>
+                                                    <option value="other" data-i18n-content="options_ideSelect_other">Other</option>
+                                                </select>
+                                                <span id="ideCustomkey">
+                                                    <input type="text"/>
+                                                    <button class="button" id="saveIdeCustomkey">
+                                                        <img src="assets/images/save.png" alt="Save"  title="Save" />
+                                                        <span data-i18n-content="options_save">Save</span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <hr/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="xdebugModel" class="xdebugModel" type="radio" value="1" />
+                                            <b data-i18n-content="options_xdebugModel_1">all HTTP requests in the page, include js, css ,ajax, POST request, enable xdebug or xhprof</b>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="xdebugModel" class="xdebugModel" type="radio" value="2" />
+                                            <b data-i18n-content="options_xdebugModel_2">only for the main HTTP request that the request's URL equal to the  browser's address bar URL, enable xdebug or xhprof. </b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="xdebugModel" class="xdebugModel" type="radio" value="3" />
+                                            <b data-i18n-content="options_xdebugModel_3">specific HTTP URLs, enable xdebug or xhprof.</b>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div id="xdebugRules">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span data-i18n-content="options_rules_descriptions">write URLs her，each row of a url. you can use regex, except ^$</span>
+                                            <textarea name="xdebugRules"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <hr/>
+                                <button class="button bold" id="saveXdebugRules">
+                                    <img src="assets/images/save.png" alt="save"/>
+                                    <span data-i18n-content="options_save">Save</span>
+                                </button>
+                                <button class="button" id="resetXdebugRules">
+                                    <img src="assets/images/trash.png" alt="trash"/>
+                                    <span data-i18n-content="options_resetOptions">Reset Options</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer id="footer">
+        leolovenet@gmail.com
+    </footer>
+</body>
+</html>
