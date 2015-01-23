@@ -13,13 +13,16 @@ LLDT-chrome-plugin
 
 安装
 ----
-- [Chrome Web Store](https://chrome.google.com/webstore/detail/ll-developer-tools/kmhkenfbapdengjogcengbnpagkjonad) 
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/ll-developer-tools/kmhkenfbapdengjogcengbnpagkjonad)
 
 - 直接下载 [lldt.crx](https://raw.githubusercontent.com/leolovenet/LLDT-chrome-plugin/master/lldt.crx)后，拖入到 chrome 里。
 
+使用
+----
+
+[How to Use Xdebug and LLDT to Debug Your PHP Code With Vagrant and PHPStrom](http://leolovenet.com/blog/2015/01/22/how-to-use-xdebug-and-lldt-to-debug-your-php-code-with-vagrant-and-phpstorm/)
 
 预览
 -----
 ![预览0](preview0.png?raw=true "预览0")
 ![预览1](preview1.png?raw=true "预览1")
-
